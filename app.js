@@ -18,7 +18,6 @@ btn.addEventListener('click', copyToClipboard);
 
 function updateColor() {
 	let color = `rgb(${red.value}, ${green.value}, ${blue.value})`;
-	/* body.style.backgroundColor = color; */
 	doc.style.setProperty('--r', red.value);
 	doc.style.setProperty('--g', green.value);
 	doc.style.setProperty('--b', blue.value);
