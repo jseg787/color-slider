@@ -5,7 +5,9 @@
 }
 
 body {
-	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	font-family: sans-serif;
 	background: rgb(var(--r), var(--g), var(--b));
 	min-height: 100vh;
@@ -19,14 +21,10 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: #efefef;
+	background-color: #dfdfdf;
 	margin: 0 auto;
-	transform: translateX(-50%);
-	width: 50%;
-	min-width: 500px;
-	position: absolute;
-	left: 50%;
-	top: 30%;
+	max-width: 700px;
+	width: 100%;
 	border-radius: 10px;
 	padding: 4rem 0;
 	box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.1), 0px 5px 10px 0px rgba(0, 0, 0, 0.4);
@@ -50,4 +48,19 @@ label,
 input {
 	display: block;
 	width: 100%;
+}
+
+button {
+	border: 3px solid rgb(var(--r), var(--g), var(--b));
+	padding: .7rem 1rem;
+	border-radius: 5px;
+	color: rgb(var(--r), var(--g), var(--b));
+	background-color: rgb(var(--r), var(--g), var(--b), .1);
+	font-weight: 700;
+	font-size: 1rem;
+}
+
+button:hover {
+	cursor: pointer;
+	background-color: rgb(var(--r), var(--g), var(--b), .3);
 }
