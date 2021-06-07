@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RGB Color Sliders</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div class="color-slider">
     <h1>COLORS</h1>
-  
+
     <form action="">
       <div class="form-header">rgb(255, 255, 255)</div>
       <div class="form-section">
         <label for="red">R</label>
         <input type="range" id="red" min="0" max="255" value="255">
       </div>
+
       <div class="form-section">
         <label for="green">G</label>
         <input type="range" id="green" min="0" max="255" value="255">
       </div>
+
       <div class="form-section">
         <label for="blue">B</label>
         <input type="range" id="blue" min="0" max="255" value="255">
       </div>
     </form>
-    
+
     <button>Copy Color to Clipboard</button>
     <script src="./app.js"></script>
   </div>
 </body>
+
 </html>

@@ -9,28 +9,26 @@ const formHeader = document.querySelector('.form-header');
 const btn = document.querySelector('button');
 const doc = document.documentElement;
 
-console.log(body.style.backgroundColor);
-
 red.addEventListener('input', updateColor);
 green.addEventListener('input', updateColor);
 blue.addEventListener('input', updateColor);
 btn.addEventListener('click', copyToClipboard);
 
 function updateColor() {
-	let color = `rgb(${red.value}, ${green.value}, ${blue.value})`;
-	doc.style.setProperty('--r', red.value);
-	doc.style.setProperty('--g', green.value);
-	doc.style.setProperty('--b', blue.value);
-	formHeader.innerText = color;
+  let color = `rgb(${red.value}, ${green.value}, ${blue.value})`;
+  doc.style.setProperty('--r', red.value);
+  doc.style.setProperty('--g', green.value);
+  doc.style.setProperty('--b', blue.value);
+  formHeader.innerText = color;
 }
 
 function copyToClipboard() {
-	navigator.clipboard
-		.writeText(formHeader.innerText)
-		.then(() => {
-			console.log('Copied!');
-		})
-		.catch((err) => {
-			console.log('error', err);
-		});
+  navigator.clipboard
+    .writeText(formHeader.innerText)
+    .then(() => {
+      console.log('Copied!');
+    })
+    .catch((err) => {
+      console.log('error', err);
+    });
 }
